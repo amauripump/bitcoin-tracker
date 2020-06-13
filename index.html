@@ -11,43 +11,58 @@
     
 </head>
 <body>
-    
-    <div class="container h-100">
-        <div class="row">
-            <h1>Bitcoin Tracker</h1>
-            <h5>Feito por Amauri (@amauripump)</h5>
-        </div>
-        
-        <div class="row">
-            
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- Topo -->
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-5805804971695585"
-                 data-ad-slot="7241250210"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-            
-        </div>
 
-        <div class="row mt-5" id="target"> Carregando ... </div>
-    </div>
+    <section class="masthead">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+              <div class="col-12 text-center">
+                <h1>Bitcoin Tracker</h1>
+                <h5>Feito por Amauri <a target="_href" href="https://twitter.com/amauripump">(@amauripump)</a></h5>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h1>
-                    O que é Bitcoin?
-                </h1>
-                <p>
-                    Bitcoin é uma moeda digital, descentralizada e que não necessita de terceiros para funcionar. Isso significa que você não depende de bancos, grandes corporações ou governos para movimentar o seu dinheiro. Com o Bitcoin, o dinheiro é realmente seu. O Bitcoin foi a primeira criptomoeda do mundo e há oito anos funciona sem qualquer interrupção, baseada em uma rede descentralizada extremamente segura chamada Blockchain criada por Satoshi Nakamoto.
-                </p>
+                <div class="row mt-5" id="target"> Carregando ... </div>
+
+                <div class="row">
+            
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- Topo -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-5805804971695585"
+                         data-ad-slot="7241250210"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                </div>
+                
+              </div>
             </div>
+          </div>
+    </section>
+    
+    <div class="container">
+
+        <div class="row m-5">
+            <h1>O que é Bitcoin?</h1>
+            <p>
+                Bitcoin é uma moeda digital, descentralizada e que não necessita de terceiros para funcionar.<br>
+                Isso significa que você não depende de bancos, grandes corporações ou governos para movimentar o seu dinheiro.<br>
+                Com o Bitcoin, o dinheiro é realmente seu. O Bitcoin foi a primeira criptomoeda do mundo e há oito anos funciona sem qualquer interrupção, baseada em uma rede descentralizada extremamente segura chamada Blockchain criada por Satoshi Nakamoto.
+            </p>
         </div>
+
+        <div class="row m-5">
+            <h1>Quais são as vantagens do Bitcoin?</h1>
+            <p>
+                O Bitcoin tem diversas propriedades e formas de uso, mas vamos abordar uma bem específica: bitcoin como moeda. Mas quais as vantagens do bitcoin como moeda? São muitas! Vamos ressaltar as principais: liberdade de pagamento, taxas menores, segurança, privacidade, controle e transparência.
+            </p>
+            <p>
+                Nenhum Bitcoin pode ser confiscado, você pode mandá-lo para quem quiser pagando taxas menores. Além disso, ele é seguro e dá mais privacidade, controle e transparência nas negociações. Contudo, o Bitcoin pode ser utilizado também como investimento para que está procurando diversificar seu patrimônio para ter melhores ganhos. O Bitcoin trouxe excelentes retornos e a tendência é que ele se torne mais popular a longo prazo.
+            </p>
+        </div>
+
     </div>
 
     <script>
@@ -70,7 +85,7 @@
             const { USD, BRL } = data.bpi;
 
             document.getElementById('target').innerHTML = `
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="card border-secondary mb-3">
                         <div class="card-header">Valor em Reais (${BRL.code})</div>
                         <div class="card-body">
@@ -80,7 +95,7 @@
                     </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="card border-secondary mb-3">
                         <div class="card-header">Valor em Dólares (${USD.code})</div>
                         <div class="card-body">

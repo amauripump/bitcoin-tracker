@@ -2,3 +2,8 @@ h1, h5{
     width: 100%;
     text-align: center;
 }
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+}
